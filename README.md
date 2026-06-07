@@ -104,4 +104,4 @@ http://localhost:PORT
 ## Developer
 
 - **Nama**    : Jefri Wahyudiana Putra
-- **Tanggal** : Juni 2026
+- **Bulan** : Juni 2026
