@@ -103,5 +103,5 @@ http://localhost:PORT
 
 ## Developer
 
-- **Nama**    : [Nama Kamu]
+- **Nama**    : Jefri Wahyudiana Putra
 - **Tanggal** : Juni 2026
