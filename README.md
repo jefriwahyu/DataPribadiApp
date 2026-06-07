@@ -1,6 +1,6 @@
 # Aplikasi Data Karyawan
 
-Aplikasi web untuk mengelola data karyawan, dibangun menggunakan ASP.NET Core MVC.
+Aplikasi web untuk mengelola data pribadi karyawan, dibangun menggunakan ASP.NET Core MVC.
 
 ---
 
@@ -20,6 +20,28 @@ Aplikasi web untuk mengelola data karyawan, dibangun menggunakan ASP.NET Core MV
 - Detail data karyawan
 - Hapus data karyawan dengan konfirmasi
 - Pencarian berdasarkan NIK dan Nama
+
+---
+
+## Tampilan Aplikasi
+
+### Home
+<img width="1349" height="680" alt="image" src="https://github.com/user-attachments/assets/dbebf833-5dd1-4b67-9a31-be2470d04b88" />
+
+### Monitoring Data Karyawan
+<img width="1365" height="644" alt="image" src="https://github.com/user-attachments/assets/b9f145b7-6599-4b61-87c3-f4ac2fc33d98" />
+
+### Tambah Data
+<img width="1348" height="677" alt="image" src="https://github.com/user-attachments/assets/5ddd222a-320b-4f2e-bc7c-8f3b7d6353ef" />
+
+### Edit Data
+<img width="1351" height="678" alt="image" src="https://github.com/user-attachments/assets/61373461-315a-4b83-8e7b-925e6b3dcb02" />
+
+### Detail Data
+<img width="1348" height="691" alt="image" src="https://github.com/user-attachments/assets/5c9e1158-79f9-4ff7-8ca3-c9b1302cb7ae" />
+
+### Hapus Data
+<img width="1365" height="647" alt="image" src="https://github.com/user-attachments/assets/d3f6384e-cebc-49df-9344-4919d53f37fd" />
 
 ---
 
@@ -44,6 +66,8 @@ DataKaryApp/
 │   │   └── Detail.cshtml
 │   └── Shared/
 │       └── _Layout.cshtml
+├── database/
+│   └── DataKaryAppDB.sql
 └── appsettings.json
 ```
 
@@ -61,16 +85,16 @@ DataKaryApp/
 
 1. **Clone repository ini**
 ```bash
-git clone https://github.com/USERNAME/NAMA_REPO.git
-cd NAMA_REPO
+git clone https://github.com/jefriwahyu/DataKaryApp.git
+cd DataKaryApp
 ```
 
-2. **Restore database** — buka SQL Server Management Studio (SSMS), lalu jalankan file `database/DataKaryaApp.sql`
+2. **Restore database** — buka SQL Server Management Studio (SSMS), lalu jalankan file `database/DataKaryAppDB.sql`
 
 3. **Sesuaikan Connection String** di `appsettings.json`
 ```json
 "ConnectionStrings": {
-  "DefaultConnection": "Server=NAMA_SERVER;Database=DataKaryaAppDB;Trusted_Connection=True;TrustServerCertificate=True;"
+  "DefaultConnection": "Server=NAMA_SERVER;Database=DataKaryAppDB;Trusted_Connection=True;TrustServerCertificate=True;"
 }
 ```
 Ganti `NAMA_SERVER` dengan nama SQL Server kamu.
@@ -102,5 +126,5 @@ http://localhost:PORT
 
 ## Developer
 
-- **Nama**    : Jefri Wahyudiana Putra
-- **Bulan** : Juni 2026
+- **Nama**    : [Nama Kamu]
+- **Tanggal** : Juni 2026
