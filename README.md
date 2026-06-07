@@ -1,6 +1,6 @@
-# Aplikasi Data Pribadi Karyawan
+# Aplikasi Data Karyawan
 
-Aplikasi web untuk mengelola data pribadi karyawan, dibangun menggunakan ASP.NET Core MVC.
+Aplikasi web untuk mengelola data karyawan, dibangun menggunakan ASP.NET Core MVC.
 
 ---
 
@@ -26,7 +26,7 @@ Aplikasi web untuk mengelola data pribadi karyawan, dibangun menggunakan ASP.NET
 ## Struktur Project
 
 ```
-DataPribadiApp/
+DataKaryApp/
 ├── Controllers/
 │   ├── HomeController.cs
 │   └── KaryawanController.cs
@@ -65,12 +65,12 @@ git clone https://github.com/USERNAME/NAMA_REPO.git
 cd NAMA_REPO
 ```
 
-2. **Restore database** — buka SQL Server Management Studio (SSMS), lalu jalankan file `database/DataPribadiDB.sql`
+2. **Restore database** — buka SQL Server Management Studio (SSMS), lalu jalankan file `database/DataKaryaApp.sql`
 
 3. **Sesuaikan Connection String** di `appsettings.json`
 ```json
 "ConnectionStrings": {
-  "DefaultConnection": "Server=NAMA_SERVER;Database=DataPribadiDB;Trusted_Connection=True;TrustServerCertificate=True;"
+  "DefaultConnection": "Server=NAMA_SERVER;Database=DataKaryaAppDB;Trusted_Connection=True;TrustServerCertificate=True;"
 }
 ```
 Ganti `NAMA_SERVER` dengan nama SQL Server kamu.
