@@ -222,3 +222,4 @@ G:\Teknikal Tes\PT. Istidata Indopacific Solution Centre\DataPribadiApp\obj\Debu
 G:\Teknikal Tes\PT. Istidata Indopacific Solution Centre\DataPribadiApp\obj\Debug\net10.0\DataPribadiApp.pdb
 G:\Teknikal Tes\PT. Istidata Indopacific Solution Centre\DataPribadiApp\obj\Debug\net10.0\DataPribadiApp.genruntimeconfig.cache
 G:\Teknikal Tes\PT. Istidata Indopacific Solution Centre\DataPribadiApp\obj\Debug\net10.0\ref\DataPribadiApp.dll
+G:\Teknikal Tes\PT. Istidata Indopacific Solution Centre\DataPribadiApp\obj\Debug\net10.0\DataPribadiApp.sourcelink.json
