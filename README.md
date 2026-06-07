@@ -1,6 +1,6 @@
 # Aplikasi Data Pribadi Karyawan
 
-Aplikasi web untuk mengelola data pribadi karyawan, dibangun menggunakan ASP.NET Core MVC dengan Entity Framework Core.
+Aplikasi web untuk mengelola data pribadi karyawan, dibangun menggunakan ASP.NET Core MVC.
 
 ---
 
@@ -8,7 +8,6 @@ Aplikasi web untuk mengelola data pribadi karyawan, dibangun menggunakan ASP.NET
 
 - **Front End** : HTML, CSS, JavaScript, jQuery, Bootstrap 5
 - **Back End**  : C# ASP.NET Core MVC
-- **ORM**       : Entity Framework Core
 - **Database**  : Microsoft SQL Server
 
 ---
