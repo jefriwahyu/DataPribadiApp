@@ -1,0 +1,74 @@
+@model DataPribadiApp.Models.Karyawan
+
+@{
+    ViewData["Title"] = "Detail Data";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h4><i class="bi bi-person-lines-fill"></i> Aplikasi Data Pribadi</h4>
+                    <h6 class="fw-bold mb-3">Detail Data Pribadi</h6>
+
+                    <!-- NIK -->
+                    <div class="mb-3">
+                        <label class="form-label">NIK</label>
+                        <input value="@Model.NIK" class="form-control" readonly />
+                    </div>
+
+                    <!-- Nama Lengkap -->
+                    <div class="mb-3">
+                        <label class="form-label">Nama Lengkap</label>
+                        <input value="@Model.NamaLengkap" class="form-control" readonly />
+                    </div>
+
+                    <!-- Jenis Kelamin -->
+                    <div class="mb-3">
+                        <label class="form-label d-block">Jenis Kelamin</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" value="Laki-laki"
+                                   @(Model.JenisKelamin == "Laki-laki" ? "checked" : "") disabled />
+                            <label class="form-check-label">Laki-laki</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" value="Perempuan"
+                                   @(Model.JenisKelamin == "Perempuan" ? "checked" : "") disabled />
+                            <label class="form-check-label">Perempuan</label>
+                        </div>
+                    </div>
+
+                    <!-- Tanggal Lahir -->
+                    <div class="mb-3">
+                        <label class="form-label">Tanggal Lahir</label>
+                        <input value="@Model.TanggalLahir?.ToString("yyyy-MM-dd")"
+                               class="form-control" type="date" readonly />
+                    </div>
+
+                    <!-- Umur -->
+                    <div class="mb-3">
+                        <label class="form-label">Umur</label>
+                        <input value="@Model.Umur tahun" class="form-control" readonly />
+                    </div>
+
+                    <!-- Alamat -->
+                    <div class="mb-3">
+                        <label class="form-label">Alamat</label>
+                        <textarea class="form-control" rows="3" readonly>@Model.Alamat</textarea>
+                    </div>
+
+                    <!-- Negara -->
+                    <div class="mb-3">
+                        <label class="form-label">Negara</label>
+                        <input value="@Model.Negara" class="form-control" readonly />
+                    </div>
+
+                    <a asp-action="Index" class="btn btn-secondary">
+                        <i class="bi bi-arrow-left me-1"></i>Kembali
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

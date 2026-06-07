@@ -1,0 +1,74 @@
+@model DataPribadiApp.Models.Karyawan
+
+@{
+    ViewData["Title"] = "Edit Data";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h4><i class="bi bi-person-lines-fill"></i> Aplikasi Data Pribadi</h4>
+                    <h6 class="fw-bold mb-3">Edit Data Pribadi</h6>
+
+                    <form asp-action="Edit" method="post">
+                        @Html.AntiForgeryToken()
+                        <div class="mb-3">
+                            <label class="form-label">NIK</label>
+                            <input asp-for="NIK" class="form-control" readonly />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Nama Lengkap</label>
+                            <input asp-for="NamaLengkap" class="form-control" />
+                            <span asp-validation-for="NamaLengkap" class="text-danger small"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Jenis Kelamin</label><br />
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio"
+                                       asp-for="JenisKelamin" value="Laki-laki" id="lakiLaki" />
+                                <label class="form-check-label" for="lakiLaki">Laki-laki</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio"
+                                       asp-for="JenisKelamin" value="Perempuan" id="perempuan" />
+                                <label class="form-check-label" for="perempuan">Perempuan</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Tanggal Lahir</label>
+                            <input asp-for="TanggalLahir" class="form-control" type="date" />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Alamat</label>
+                            <textarea asp-for="Alamat" class="form-control" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Negara</label>
+                            <select asp-for="Negara" class="form-select">
+                                <option value="">Pilih Negara</option>
+                                <option>Indonesia</option>
+                                <option>Malaysia</option>
+                                <option>Singapura</option>
+                                <option>Argentina</option>
+                                <option>Portugal</option>
+                                <option>Rusia</option>
+                                <option>Amerika Serikat</option>
+                                <option>Jepang</option>
+                                <option>Korea Selatan</option>
+                                <option>Australia</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-warning">Ubah</button>
+                        <a asp-action="Index" class="btn btn-secondary">Kembali</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

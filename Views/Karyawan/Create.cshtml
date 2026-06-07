@@ -1,0 +1,95 @@
+@model DataPribadiApp.Models.Karyawan
+
+@{
+    ViewData["Title"] = "Tambah Data";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h4><i class="bi bi-person-lines-fill"></i> Aplikasi Data Pribadi</h4>
+                    <h6 class="fw-bold mb-3">Tambah Data Baru</h6>
+
+                    <form asp-action="Create" method="post">
+                        @Html.AntiForgeryToken()
+
+                        <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+                        <!-- NIK -->
+                        <div class="mb-3">
+                            <label class="form-label">NIK</label>
+                            <input asp-for="NIK" class="form-control" type="number" placeholder="Masukkan NIK..." />
+                            <span asp-validation-for="NIK" class="text-danger small"></span>
+                        </div>
+
+                        <!-- Nama Lengkap -->
+                        <div class="mb-3">
+                            <label class="form-label">Nama Lengkap</label>
+                            <input asp-for="NamaLengkap" class="form-control" placeholder="Masukkan Nama Lengkap..." />
+                            <span asp-validation-for="NamaLengkap" class="text-danger small"></span>
+                        </div>
+
+                        <!-- Jenis Kelamin -->
+                        <div class="mb-3">
+                            <label class="form-label d-block">Jenis Kelamin</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio"
+                                       asp-for="JenisKelamin" value="Laki-laki" id="lakiLaki" />
+                                <label class="form-check-label" for="lakiLaki">Laki-laki</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio"
+                                       asp-for="JenisKelamin" value="Perempuan" id="perempuan" />
+                                <label class="form-check-label" for="perempuan">Perempuan</label>
+                            </div>
+                        </div>
+
+                        <!-- Tanggal Lahir -->
+                        <div class="mb-3">
+                            <label class="form-label">Tanggal Lahir</label>
+                            <input asp-for="TanggalLahir" class="form-control" type="date" />
+                        </div>
+
+                        <!-- Alamat -->
+                        <div class="mb-3">
+                            <label class="form-label">Alamat</label>
+                            <textarea asp-for="Alamat" class="form-control" rows="3"
+                                      placeholder="Masukkan Alamat..."></textarea>
+                        </div>
+
+                        <!-- Negara -->
+                        <div class="mb-3">
+                            <label class="form-label">Negara</label>
+                            <select asp-for="Negara" class="form-select">
+                                <option value="">Pilih Negara</option>
+                                <option>Indonesia</option>
+                                <option>Malaysia</option>
+                                <option>Singapura</option>
+                                <option>Argentina</option>
+                                <option>Portugal</option>
+                                <option>Rusia</option>
+                                <option>Amerika Serikat</option>
+                                <option>Jepang</option>
+                                <option>Korea Selatan</option>
+                                <option>Australia</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <i class="bi bi-save me-1"></i>Simpan
+                        </button>
+                        <a asp-action="Index" class="btn btn-secondary">
+                            <i class="bi bi-arrow-left me-1"></i>Kembali
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
