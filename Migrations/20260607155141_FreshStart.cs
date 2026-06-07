@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace DataPribadiApp.Migrations
+namespace DataKaryApp.Migrations
 {
     /// <inheritdoc />
     public partial class FreshStart : Migration

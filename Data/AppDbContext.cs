@@ -1,4 +1,4 @@
-namespace DataPribadiApp.Models;
+namespace DataKaryApp.Models;
 using Microsoft.EntityFrameworkCore;
 
 public class AppDbContext : DbContext

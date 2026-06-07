@@ -1,4 +1,4 @@
-namespace DataPribadiApp.Models;
+namespace DataKaryApp.Models;
 
 public class ErrorViewModel
 {

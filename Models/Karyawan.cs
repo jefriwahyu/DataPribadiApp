@@ -1,4 +1,4 @@
-namespace DataPribadiApp.Models;
+namespace DataKaryApp.Models;
 
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;

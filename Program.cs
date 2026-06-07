@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using DataPribadiApp.Models;   
+using DataKaryApp.Models;   
 
 var builder = WebApplication.CreateBuilder(args);
 

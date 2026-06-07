@@ -1,8 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using DataPribadiApp.Models;
+using DataKaryApp.Models;
 
-namespace DataPribadiApp.Controllers;
+namespace DataKaryApp.Controllers;
 
 public class HomeController : Controller
 {
