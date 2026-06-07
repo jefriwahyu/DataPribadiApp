@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DataPribadiApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7886dd49de75b1db07516e4b39fb427443ebd650")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+406c3e5fb6fd15ebe40f7c8059285fd3ddb9fa36")]
 [assembly: System.Reflection.AssemblyProductAttribute("DataPribadiApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DataPribadiApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
